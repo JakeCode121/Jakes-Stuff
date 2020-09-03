@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="jas611_GettysburgAddress.rnc" type="application/relax-ng-compact-syntax"?>
 <root>
     <text type="address" place="Gettysburg" author="Lincoln" year="1863">
         <sentence n="1"><HistRef event="Revolutionary_War">Fourscore and seven years ago our fathers brought forth, on this continent, a new nation,</HistRef> conceived in liberty, and dedicated to the proposition that all men are created equal.</sentence>
