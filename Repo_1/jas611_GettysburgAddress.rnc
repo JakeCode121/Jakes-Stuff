@@ -3,13 +3,15 @@ start = root
 root = element root {manuscript}
 manuscript = element manuscript {type | place | author| year | sentence+}
 type = attribute type {"address"}
-place = attribute place {"gettysburgh"} 
+place = attribute place {"gettysburgh" | "other" } 
 author = attribute author {"abraham Lincoln"}
 year = attribute year {"1863"}
-sentence = element sentence 
-
-
-
+sentence = element sentence { n, (HistRef | text | PlaceRef)+
+HistRef = element HistRef { event, text }
+event = attribute event {"Revolutionary War" | "Civil War" | "other" }
+PlaceRef = element PlaceRef { place, text }
+n = attribute n { xsd: integer }
+# Dr. Campbell I think this was better; obviously, I could break down the body more; but I didn't have it broke down in my XML doc
 
 
 
